@@ -1,0 +1,30 @@
+/* ---------------------------------------------------------通用----------------------------------------- */
+*{
+    padding: 0;
+    margin: 0;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+
+html { 
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none; 
+}
+html, body {
+    height:100%;
+    width:100%; 
+}
+html, body, div, ul, ol, li, dl, dt, dd, iframe, textarea, input, button, p, strong, b, i, a, span, del, pre, table, tr, th, td, form, fieldset, .pr, .pc { margin: 0; padding: 0; word-wrap: break-word; font-family: verdana,Microsoft YaHei,Tahoma,sans-serif; *font-family: Microsoft YaHei,verdana,Tahoma,sans-serif; }
+body, ul, ol, li, dl, dd, p, form, fieldset, .pr, .pc, em, del { font-style: normal; font-size: 100%; }
+ul, ol, dl { list-style: none; }
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+body{
+    background-image: url('../images/nrdw.png');
+    background-size: 100% 100%;
+}
+input:focus { outline: none; }
