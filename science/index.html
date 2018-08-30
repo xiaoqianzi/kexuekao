@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,472 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/currency.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index.css">
     <script src="./js/jquery-3.2.1.js"></script>
     <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/echarts.min.js"></script>
 </head>
+
 <body>
-    
+    <nav class="navbar navbar-default navbar-fixed-top trans">
+        <div class="container-fluid">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                        aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <div class="back_ground"></div>
+                    </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse nav_center" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav" id="nav_dhl">
+                        <li class="active"><a href="#" id="nav_da">首页 <span class="sr-only"></span></a></li>
+                        <li><a href="#">练习</a></li>
+                        <li class="dropdown"><a href="#">模考</a></li>
+                        <li><a href="#">公开课</a></li>
+                        <li><a href="#">论坛</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right" id="nav_two">
+                        <li><a href="#">注册</a></li>
+                        <li class="dropdown">
+                            <a href="#">登陆</a>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div>
+        </div><!-- /.container-fluid -->
+    </nav>
+    <div class="container-fluid banner_bj"><img src="./images/banner.png" class="img-responsive" alt=""></div>
+    <div class="container con_top">
+        <p class="text-center pfont">科学考的数据展示</p>
+        <p class="text-center psize">DATA ON THE SCIENCE TEST</p>
+        <p class="text-center p_fontsize">“科学考”是2018年推出的有关学生的快捷快递价格肯定见过肯德基看到结果看到结果肯定是大幅度反对发射点JFK的首付款看到JFK的时间公开赛的JFK的。。。。。。。。</p>
+    </div>
+    <!-- 线状图和饼图位置 -->
+    <div class="container">
+        <!-- <div class="row">
+            <div class="col-lg-7 col-md-7 hidden-xs pull-left">
+                <div class="pull-left left_color">
+                    <p>学习统计表(min)</p>
+                </div>
+                <div id="main"></div>
+            </div>
+            <div class="col-lg-5 col-md-5 hidden-xs pull-right">
+                <div class="pull-right right_color">
+                    <p>课题正确率</p>
+                </div>
+                <div id="macn"></div>
+            </div>
+        </div> -->
+    </div>
+    <!-- bannar2 -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                <img src="./images/banner2.png" class="img-responsive" alt="">
+            </div>
+            <div class="col-lg-6 col-md-12 ban_top">
+                <h3 class="text_a">模拟考试</h3>
+                <span class="text_b">SIMULATION TEST</span>
+                <p class="text_c">打破传统的卷子，笔的考试。体验新的模考，节约时间，节约资源 让你的空间广阔的接口看到几个扩大解放肯德基空间广阔的肌肤看 到几个扩大解放考试大纲。。。。。</p>
+            </div>
+        </div>
+        <div class="text-center">
+            <h3>公开课</h3>
+        </div>
+        <div class="text-center">
+            <p class="text_color">PUBLIC CLASS</p>
+        </div>
+    </div>
+    <!-- banner3 -->
+    <div class="container-fluid ban_padding">
+        <a href="#"><img src="./images/banner3.png" class="img-responsive" alt=""></a>
+    </div>
+    <!-- 论坛 -->
+    <div class="container">
+        <div class="text-center">
+            <h3>论坛</h3>
+        </div>
+        <div class="text-center">
+            <p class="text_color">PORUM</p>
+        </div>
+        <div class="text-center ro_flex">
+            <div class="forum">
+                <div class="forum_a">
+                    <img src="./images/ceshi.png" alt="">
+                    <span>高雪讲师</span>
+                    <p>高雪讲师2009年毕业于快递费的空间。。。</p>
+                </div>
+                <div class="forum_b">
+                    <p>如何应付高考正在讨论如何应付高考正在讨论</p>
+                </div>
+                <div class="forum_c">
+                    <button>参与讨论</button>
+                </div>
+            </div>
+
+            <div class="forum">
+                <div class="forum_a">
+                    <img src="./images/ceshi.png" alt="">
+                    <span>高雪讲师</span>
+                    <p>高雪讲师2009年毕业于快递费的空间。。。</p>
+                </div>
+                <div class="forum_b">
+                    <p>如何应付高考正在讨论如何应付高考正在讨论如何应付高考正在讨论</p>
+                </div>
+                <div class="forum_c">
+                    <button>参与讨论</button>
+                </div>
+            </div>
+
+            <div class="forum">
+                <div class="forum_a">
+                    <img src="./images/ceshi.png" alt="">
+                    <span>高雪讲师</span>
+                    <p>高雪讲师2009年毕业于快递费的空间。。。</p>
+                </div>
+                <div class="forum_b">
+                    <p>如何应付高考正在讨论如何应付高考正在讨论如何应付高考正在讨论</p>
+                </div>
+                <div class="forum_c">
+                    <button>参与讨论</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 评论留言 -->
+    <div class="container comage">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-xs-12 comage_diva">
+                <img src="./images/touxiang.png" class="comage_img" alt="">
+                <p class="comage_p">【快速被课文的方法有哪些】这些方法你了解几个，靠谱程度如何。。。。</p>
+            </div>
+            <div class="col-lg-2 col-md-2 col-xs-6 comage_diva">
+                <a href="#" class="comage_a">
+                    <img src="./images/zan.png" class="comage_ii" alt="">
+                    <p>36987159人参与</p>
+                </a>
+            </div>
+            <div class="col-lg-2 col-md-2 col-xs-6 comage_diva">
+                <a href="#" class="comage_a">
+                    <img src="./images/em.png" class="comage_io" alt="">
+                    <p>28968人发表意见</p>
+                </a>
+            </div>
+            <div class="col-lg-2 col-md-2 col-xs-12 comage_diva">
+                <p class="comage_time">2018.6.12</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-xs-12 comage_diva">
+                <img src="./images/touxiang.png" class="comage_img" alt="">
+                <p class="comage_p">【快速被课文的方法有哪些】这些方法你了解几个，靠谱程度如何。。。。</p>
+            </div>
+            <div class="col-lg-2 col-md-2 col-xs-6 comage_diva">
+                <a href="#" class="comage_a">
+                    <img src="./images/zan.png" class="comage_ii" alt="">
+                    <p>36987159人参与</p>
+                </a>
+            </div>
+            <div class="col-lg-2 col-md-2 col-xs-6 comage_diva">
+                <a href="#" class="comage_a">
+                    <img src="./images/em.png" class="comage_io" alt="">
+                    <p>28968人发表意见</p>
+                </a>
+            </div>
+            <div class="col-lg-2 col-md-2 col-xs-12 comage_diva">
+                <p class="comage_time">2018.6.12</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-xs-12 comage_diva">
+                <img src="./images/touxiang.png" class="comage_img" alt="">
+                <p class="comage_p">【快速被课文的方法有哪些】这些方法你了解几个，靠谱程度如何。。。。</p>
+            </div>
+            <div class="col-lg-2 col-md-2 col-xs-6 comage_diva">
+                <a href="#" class="comage_a">
+                    <img src="./images/zan.png" class="comage_ii" alt="">
+                    <p>36987159人参与</p>
+                </a>
+            </div>
+            <div class="col-lg-2 col-md-2 col-xs-6 comage_diva">
+                <a href="#" class="comage_a">
+                    <img src="./images/em.png" class="comage_io" alt="">
+                    <p>28968人发表意见</p>
+                </a>
+            </div>
+            <div class="col-lg-2 col-md-2 col-xs-12 comage_diva">
+                <p class="comage_time">2018.6.12</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-xs-12 comage_diva">
+                <img src="./images/touxiang.png" class="comage_img" alt="">
+                <p class="comage_p">【快速被课文的方法有哪些】这些方法你了解几个，靠谱程度如何。。。。</p>
+            </div>
+            <div class="col-lg-2 col-md-2 col-xs-6 comage_diva">
+                <a href="#" class="comage_a">
+                    <img src="./images/zan.png" class="comage_ii" alt="">
+                    <p>36987159人参与</p>
+                </a>
+            </div>
+            <div class="col-lg-2 col-md-2 col-xs-6 comage_diva">
+                <a href="#" class="comage_a">
+                    <img src="./images/em.png" class="comage_io" alt="">
+                    <p>28968人发表意见</p>
+                </a>
+            </div>
+            <div class="col-lg-2 col-md-2 col-xs-12 comage_diva">
+                <p class="comage_time">2018.6.12</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-xs-12 comage_diva">
+                <img src="./images/touxiang.png" class="comage_img" alt="">
+                <p class="comage_p">【快速被课文的方法有哪些】这些方法你了解几个，靠谱程度如何。。。。</p>
+            </div>
+            <div class="col-lg-2 col-md-2 col-xs-6 comage_diva">
+                <a href="#" class="comage_a">
+                    <img src="./images/zan.png" class="comage_ii" alt="">
+                    <p>36987159人参与</p>
+                </a>
+            </div>
+            <div class="col-lg-2 col-md-2 col-xs-6 comage_diva">
+                <a href="#" class="comage_a">
+                    <img src="./images/em.png" class="comage_io" alt="">
+                    <p>28968人发表意见</p>
+                </a>
+            </div>
+            <div class="col-lg-2 col-md-2 col-xs-12 comage_diva">
+                <p class="comage_time">2018.6.12</p>
+            </div>
+        </div>
+        
+    </div>
+    <!-- 页尾信息 -->
+    <div class="container-fluid text-center footer">
+        <p>echarts.init(document.getElementByIdecharts.init(document.getElementById</p>
+    </div>
+    <!-- 线状图和饼图 -->
+    <script>
+        // var myChart = echarts.init(document.getElementById('main'));
+        // var colors = ['#e53c5a', '#000000', '#f97d4b', '#2a9987', '#91c9fb'];
+        // option = {
+        //     color: colors,
+        //     tooltip: {
+        //         trigger: 'axis'
+        //     },
+        //     toolbox: {
+        //         show: true,
+        //         y: 'bottom',
+        //         feature: {
+        //             mark: { show: true },
+        //             dataView: { show: true, readOnly: false },
+        //             magicType: { show: true, type: ['line', 'pie'] },
+        //             restore: { show: true },
+        //             saveAsImage: { show: true }
+        //         }
+        //     },
+        //     calculable: true,
+        //     legend: {
+        //         data: ['练习', '模考', '公开课']
+        //     },
+        //     xAxis: [
+        //         {
+        //             type: 'category',
+        //             splitLine: { show: false },
+        //             data: ['周一', '周二', '周三', '周四', '周五', '周六', '周日']
+        //         }
+        //     ],
+        //     yAxis: [
+        //         {
+        //             type: 'value',
+        //             position: 'left'
+        //         }
+        //     ],
+        //     series: [
+        //         {
+        //             name: '练习',
+        //             type: 'line',
+        //             data: [90.9, 50.9, 40.1, 50.7, 120.3, 88.2, 86.2]
+        //         },
+        //         {
+        //             name: '模考',
+        //             type: 'line',
+        //             data: [280.6, 200.9, 25.0, 140.4, 20.7, 200.7, 90.7]
+        //         },
+        //         {
+        //             name: '公开课',
+        //             type: 'line',
+        //             data: [75.6, 50.9, 50.0, 88.5, 90.6, 86.2, 77.5]
+        //         },
+        //         {
+        //             name: '搜索引擎细分',
+        //             type: 'pie',
+        //             tooltip: {
+        //                 trigger: 'item',
+        //                 formatter: '{a} <br/>{b} : {c} ({d}%)'
+        //             },
+        //             center: [900, 130],
+        //             radius: [0, 50],
+        //             itemStyle: {
+        //                 normal: {
+        //                     labelLine: {
+        //                         length: 20
+        //                     }
+        //                 }
+        //             },
+        //             data: [
+        //                 { value: 65, name: '模考正确率' },
+        //                 { value: 35, name: '错误率' },
+        //             ]
+        //         },
+        //         {
+        //             name: '搜索引擎细分',
+        //             type: 'pie',
+        //             tooltip: {
+        //                 trigger: 'item',
+        //                 formatter: '{a} <br/>{b} : {c} ({d}%)'
+        //             },
+        //             center: [900, 250],
+        //             radius: [0, 50],
+        //             itemStyle: {
+        //                 normal: {
+        //                     labelLine: {
+        //                         length: 20
+        //                     }
+        //                 }
+        //             },
+        //             data: [
+        //                 { value: 81, name: '练习正确率' },
+        //                 { value: 19, name: '错误率' },
+        //             ]
+        //         }
+        //     ]
+        // }
+
+
+
+
+
+        // option = {
+        //     color: colors,
+        //     tooltip: {
+        //         trigger: 'none',
+        //         axisPointer: {
+        //             type: 'cross'
+        //         }
+        //     },
+        //     legend: {
+        //         data: ['模考', '练习', '公开课']
+        //     },
+        //     xAxis: [
+        //         {
+        //             type: 'category',
+        //             axisTick: {
+        //                 alignWithLabel: true
+        //             },
+        //             axisLine: {
+        //                 onZero: false,
+        //                 lineStyle: {
+        //                     color: colors[1]
+        //                 }
+        //             },
+        //             axisPointer: {
+        //                 label: {
+        //                     formatter: function (params) {
+        //                         return '模考' + params.value
+        //                             + (params.seriesData.length ? '：' + params.seriesData[0].data : '');
+        //                     }
+        //                 }
+        //             },
+        //             data: ["周一", "周二", "周三", "周四", "周五", "周六", "周日"]
+        //         },
+        //         {
+        //             type: 'category',
+        //             axisTick: {
+        //                 alignWithLabel: true
+        //             },
+        //             axisLine: {
+        //                 onZero: false,
+        //                 lineStyle: {
+        //                     color: colors[0]
+        //                 }
+        //             },
+        //             axisPointer: {
+        //                 label: {
+        //                     formatter: function (params) {
+        //                         return '练习' + params.value
+        //                             + (params.seriesData.length ? '：' + params.seriesData[0].data : '');
+        //                     }
+        //                 }
+        //             },
+        //             data: ["周一", "周二", "周三", "周四", "周五", "周六", "周日"]
+        //         },
+        //         {
+        //             type: 'category',
+        //             axisTick: {
+        //                 alignWithLabel: true
+        //             },
+        //             axisLine: {
+        //                 onZero: false,
+        //                 lineStyle: {
+        //                     color: colors[2]
+        //                 }
+        //             },
+        //             axisPointer: {
+        //                 label: {
+        //                     formatter: function (params) {
+        //                         return '公开课' + params.value
+        //                             + (params.seriesData.length ? '：' + params.seriesData[0].data : '');
+        //                     }
+        //                 }
+        //             },
+        //             data: ["周一", "周二", "周三", "周四", "周五", "周六", "周日"]
+        //         }
+        //     ],
+        //     yAxis: [
+        //         {
+        //             type: 'value'
+        //         }
+        //     ],
+        //     series: [
+        //         {
+        //             name: '模考',
+        //             type: 'line',
+        //             xAxisIndex: 1,
+        //             smooth: true,
+        //             data: [280.6, 200.9, 25.0, 140.4, 20.7, 200.7, 90.7]
+        //         },
+        //         {
+        //             name: '练习',
+        //             type: 'line',
+        //             data: [90.9, 50.9, 40.1, 50.7, 120.3, 88.2, 86.2]
+        //         },
+        //         {
+        //             name: '公开课',
+        //             type: 'line',
+        //             data: [75.6, 50.9, 50.0, 88.5, 90.6, 86.2, 77.5]
+        //         }
+        //     ]
+        // };
+
+        myChart.setOption(option);
+
+
+    </script>
 </body>
+
 </html>
