@@ -1,3 +1,35 @@
+/* ---------------------------------------------------------通用----------------------------------------- */
+*{
+    padding: 0;
+    margin: 0;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+
+html { 
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none; 
+}
+html, body {
+    height:100%;
+    width:100%; 
+}
+html, body, div, ul, ol, li, dl, dt, dd, iframe, textarea, input, button, p, strong, b, i, a, span, del, pre, table, tr, th, td, form, fieldset, .pr, .pc { margin: 0; padding: 0; word-wrap: break-word; font-family: verdana,Microsoft YaHei,Tahoma,sans-serif; *font-family: Microsoft YaHei,verdana,Tahoma,sans-serif; }
+body, ul, ol, li, dl, dd, p, form, fieldset, .pr, .pc, em, del { font-style: normal; font-size: 100%; }
+ul, ol, dl { list-style: none; }
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+body{
+    background-image: url('../images/nrdw.png');
+    background-size: 100% 100%;
+}
+input:focus { outline: none; }
+
+/* 开始 */
 .back_ground{
     width: 8.375rem;
     height: 3.25rem;
@@ -13,11 +45,6 @@
 }
 .nav_center{
     text-align: center;
-}
-@media screen and (max-width:765px){
-    nav_center{
-        text-align: none;
-    }
 }
 #nav_dhl{
     display: inline-block;
@@ -200,4 +227,299 @@
     margin: 0;
     background: #3c464e;
     color: #808387;
+}
+/* ------------------------------------practice------------------------------- */
+.color_nav .back_prac{
+    width: 8.375rem;
+    height: 3.25rem;
+    background-image: url('../images/logo2.png');
+    background-size: 100% 100%;
+}
+.nav-center{
+    text-align: center;
+}
+.banner_bj{
+    padding: 0;
+    margin: 0;
+}
+.nav_center{
+    text-align: center;
+}
+#nav_color{
+    display: inline-block;
+    float: none;
+}
+#nav_color a{
+    color: #666666;
+    font-size: 1.625rem;
+}
+#nav_color a:hover{
+    color: #458fff;
+}
+#nav_one a{
+    color: #666666;
+}
+#nav_one a:hover{
+    color: #458fff;
+}
+#nav_color #nav_dacolor{
+    color: #458fff;
+}
+.color_nav{
+    border: 0;
+}
+#zhuche{
+    padding: 2px 10px;
+    margin: 15px 0 0 5px;
+    border: 1px solid #666666;
+    border-radius: 5px;
+}
+#zhuche :hover{
+    color: #458fff;
+}
+#denglu{
+    padding: 2px 10px;
+    margin: 15px 0 0 5px;
+    border: 1px solid #666666;
+    border-radius: 5px;
+}
+#denglu :hover{
+    color: #458fff;
+}
+/* 主体 */
+.come_but{
+    margin-top: 1.25rem;
+}
+.come_but a{
+    font-size: 1.625rem;
+    color: #458fff;
+}
+.come_top{
+    margin-top: 1.25rem;
+    color: #666666;
+}
+.but_flex{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1.25rem;
+}
+.but_ton a{
+    display: block;
+    width: 16.25rem;
+    height: 6.25rem;
+    padding-top: 1.5rem;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    color: #458fff;
+}
+.but_ton a:hover{
+    color: #ffffff;
+    background: #458fff;
+}
+.but_flex .but_ton .but_mr{
+    color: #ffffff;
+    background: #458fff;
+}
+.but_ton a p{
+    font-size: 1rem;
+}
+/* 选择学科 */
+.but_flxue{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1.25rem;
+}
+.but_flxue .but_xue{
+    display: block;
+    width: 16.25rem;
+    height: 35rem;
+    color: #333333;
+    border-radius: 5px;
+    padding: 0.9375rem;
+}
+.but_flxue .but_flxue_bk{
+    flex: 0 0 25%;
+}
+.but_xue div{
+    color: #666666;
+}
+.but_xue div span{
+    margin-top: 1.25rem;
+}
+.but_xue div p{
+    margin-top: 1.25rem;
+}
+.but_co{
+    color: #ffffff;
+    background: #458fff;
+}
+.but_co div{
+    color: #ffffff;
+}
+.link_top{
+    display: block;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+/* ----------------------------query----------------------------- */
+.bu_cofont{
+    width: 6.25rem;
+    height: 3.125rem;
+    line-height: 3.125rem;
+    background: #458fff;
+    font-size: 1.5rem;
+    color: #ffffff;
+    border-radius: 5px;
+    margin: 0 15px;
+}
+.bu_cofont_a{
+    display: block;
+    width: 6.25rem;
+    height: 3.125rem;
+    line-height: 3.125rem;
+    font-size: 1.5rem;
+    color: #666666;
+}
+.bu_cofont_b{
+    display: block;
+    width: 6.25rem;
+    height: 3.125rem;
+    line-height: 3.125rem;
+    font-size: 1.5rem;
+    color: #666666;
+}
+.bu_cofont_c{
+    display: block;
+    width: 6.25rem;
+    height: 3.125rem;
+    line-height: 3.125rem;
+    font-size: 1.5rem;
+    color: #666666;
+}
+.bu_cofont_d{
+    display: block;
+    width: 6.25rem;
+    height: 3.125rem;
+    line-height: 3.125rem;
+    font-size: 1.5rem;
+    color: #666666;
+}
+.bu_cofont_e{
+    display: block;
+    width: 6.25rem;
+    height: 3.125rem;
+    line-height: 3.125rem;
+    font-size: 1.5rem;
+    color: #666666;
+}
+.bu_cofont_f{
+    display: block;
+    width: 6.25rem;
+    height: 3.125rem;
+    line-height: 3.125rem;
+    font-size: 1.5rem;
+    color: #666666;
+}
+.bu_cofont_g{
+    display: block;
+    width: 6.25rem;
+    height: 3.125rem;
+    line-height: 3.125rem;
+    font-size: 1.5rem;
+    color: #666666;
+}
+.bu_cofont_h{
+    display: block;
+    width: 6.25rem;
+    height: 3.125rem;
+    line-height: 3.125rem;
+    font-size: 1.5rem;
+    color: #666666;
+}
+.bu_cofont_i{
+    display: block;
+    width: 8.75rem;
+    height: 3.125rem;
+    line-height: 3.125rem;
+    font-size: 1.5rem;
+    color: #666666;
+}
+.mis_color{
+    background: #458fff;
+    color: #ffffff;
+    border-radius: 5px;
+}
+.mar_top{
+    margin-top: 8rem;
+}
+.mag_top{
+    margin-top: 2rem;
+}
+.row div{
+    margin-top: 2rem;
+}
+/* 详细情况 */
+.timu_bor{
+    margin-top: 2rem;
+    font-size: 1rem;
+    color: #458fff;
+}
+.timu_bor p{
+    margin-top: 4rem;
+}
+.timu_bos{
+    margin-top: 2rem;
+    font-size: 1rem;
+    color: #666666; 
+}
+.timu_bos p{
+    margin-top: 4rem;
+}
+/* -----------------------------------subject------------------------ */
+.bj{
+    width: 100%;
+    height: 100%;
+    background: url('../images/bj.png');
+    background-size: 100% 100%;
+}
+.sub_top{
+    margin-top: 8rem;
+    background: #ffffff;
+    background-size: 100% 100%;
+    border-radius: 5px;
+}
+.sub_top_one{
+    margin: 2.1875rem 0 2.5rem 0.9375rem;
+    font-size: 1.5rem;
+    color: #666666;
+}
+.mis_top p{
+    padding-bottom: 4rem;
+}
+.timu_top{
+    margin-top: 4rem;
+}
+.inp{
+    width: 2rem;
+    border: 0;
+}
+.aa_top{
+    margin-top: 2rem;
+}
+.bb_top{
+    margin-top: 2rem;
+}
+.div_flex{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+    margin-top: 4rem;
+}
+.divs_flex{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    margin: 2rem 0;
 }
